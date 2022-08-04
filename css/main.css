@@ -86,25 +86,41 @@ h6 {
 /*--------------------*/
 
 .wrapper {
-  width: 90%;
+  display: flex;
+  width: 100%;
   max-width: 1400px;
+  min-height: 100%;
+  flex-direction: column;
   margin: 0 auto;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
 }
 /* HEADER */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .header {
   width: 100%;
-  height: 100%;
+  min-height: 715px;
+  background-repeat: no-repeat;
   background-size: cover;
-  background: url("../img/header-bg.jpg") center center no-repeat;
+  background-position: center;
+  background: url("../images/content/header-bg.jpg");
+  background-color: #e5e5e5;
 }
 
 .header__navigation {
-  max-width: 1200px;
   display: flex;
+  max-width: 1200px;
   flex-direction: row;
   flex-wrap: nowrap;
   align-content: center;
@@ -119,15 +135,16 @@ h6 {
 .header__phone a {
   font-size: 0.89rem;
   line-height: 1.1;
+  font-style: normal;
   color: #533738;
 }
 
 .header__logo a::before {
-  content: url("../img/logo-icon.png");
-  width: 100%;
-  height: 100%;
   position: relative;
   top: 6px;
+  content: url("../images/logo-icon.png");
+  width: 100%;
+  height: 100%;
 }
 
 .menu__list {
@@ -141,9 +158,9 @@ h6 {
 }
 
 .header__container {
+  max-width: 534px;
   margin-top: 91px;
   margin-left: 184px;
-  max-width: 534px;
   padding-bottom: 168px;
 }
 
@@ -158,19 +175,19 @@ h6 {
 }
 
 .menu__item {
+  position: relative;
   display: inline-block;
   cursor: pointer;
-  position: relative;
 }
 
 .menu__item::after {
+  position: absolute;
   display: block;
   content: "";
-  background-color: #533738;
   height: 3px;
   width: 0%;
   left: 50%;
-  position: absolute;
+  background-color: #533738;
   -webkit-transition: width 0.3s ease-in-out;
   -moz--transition: width 0.3s ease-in-out;
   transition: width 0.3s ease-in-out;
@@ -185,16 +202,15 @@ h6 {
 }
 
 .btn {
-  font-weight: 500;
-  font-size: 1.1rem;
-  line-height: 1.14;
-  color: #533738;
   display: inline-block;
-  margin-top: 21px;
   width: 309px;
   height: 74px;
+  margin-top: 21px;
+  font-weight: 500;
+  font-size: 1.1rem;
   line-height: 74px;
   text-align: center;
+  color: #533738;
   background-color: #cc8b86;
   transition: all 0.5s ease;
 }
