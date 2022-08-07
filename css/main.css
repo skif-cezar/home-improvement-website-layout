@@ -154,13 +154,15 @@ h6 {
   gap: 1.45rem;
 }
 
-.menu__item {
+.menu__item,
+.header__phone {
   position: relative;
   display: inline-block;
   cursor: pointer;
 }
 
-.menu__item::after {
+.menu__item::after,
+.header__phone::after {
   position: absolute;
   display: block;
   content: "";
@@ -177,7 +179,9 @@ h6 {
 }
 
 .menu__item:hover:after,
-.menu__item:focus:after {
+.menu__item:focus:after,
+.header__phone:hover:after,
+.header__phone:focus:after {
   width: 100%;
 }
 
@@ -385,4 +389,37 @@ h6 {
   font-size: 1.66rem;
   line-height: 1.23;
   text-align: center;
+}
+
+.works__arrow-next button::after {
+  position: relative;
+  content: url("../images/arrow.svg");
+  width: 100%;
+  height: 100%;
+}
+
+.works__arrow-next {
+  padding: 40px 0 65px 0;
+  text-align: center;
+}
+
+.works__arrow-next button {
+  font-weight: 500;
+  font-size: 1.66rem;
+  line-height: 1.23;
+  color: #533738;
+  background-color: transparent;
+}
+
+.works__arrow-next button:hover::after {
+  animation: 0.4s linear 0.1s infinite alternate slidein;
+}
+
+@keyframes slidein {
+  from {
+    left: 0;
+  }
+  to {
+    left: 10px;
+  }
 }
