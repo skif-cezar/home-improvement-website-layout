@@ -323,7 +323,8 @@ h6 {
 }
 
 .works__title,
-.works__container {
+.works__container,
+.impression__content {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
@@ -416,7 +417,8 @@ h6 {
   animation: 0.4s linear 0.1s infinite alternate slidein;
 }
 
-.team {
+.team,
+.impression {
   width: 100%;
   padding-bottom: 35px;
   background-color: #e2c4ba;
@@ -439,6 +441,57 @@ h6 {
 .team__content figcaption {
   max-width: 320px;
   margin-top: 10px;
+}
+
+.impression__title {
+  text-align: center;
+}
+
+.impression__content {
+  margin-top: 40px;
+  padding-bottom: 45px;
+}
+
+.impression__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+  justify-content: space-between;
+  align-items: flex-start;
+  column-gap: 1.11rem;
+  counter-reset: section;
+  list-style-type: none;
+}
+
+.impression__item {
+  position: relative;
+  max-width: 285px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: flex-start;
+  row-gap: 1.11rem;
+  align-items: center;
+  text-align: center;
+}
+
+.impression__item::before {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 70px;
+  counter-increment: section;
+  content: counter(section);
+  font-weight: 500;
+  font-size: 1.66rem;
+  line-height: 70px;
+  text-align: center;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: #8d7370;
 }
 
 @keyframes slidein {
