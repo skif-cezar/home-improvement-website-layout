@@ -553,6 +553,46 @@ h6 {
   padding-bottom: 19px;
 }
 
+.application {
+  width: 100%;
+  background-color: #8d7370;
+}
+
+.application__form {
+  width: 508px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+  justify-content: flex-start;
+  align-items: flex-start;
+  row-gap: 1.72rem;
+}
+
+.application__form input:not(:last-child) {
+  margin-bottom: 0.22rem;
+}
+
+.application__form input {
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.66rem;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ffffff;
+  color: #f6ede9;
+  background-color: transparent;
+}
+
+.application__form input::placeholder {
+  color: #f6ede9;
+  font-size: 1rem;
+}
+
+.application__button {
+  margin-top: 0;
+}
+
 @keyframes slidein {
   from {
     left: 0;
