@@ -506,17 +506,33 @@ h6 {
   align-content: flex-start;
   justify-content: space-between;
   align-items: center;
-  column-gap: 1.11rem;
+  column-gap: 1.61rem;
   padding-bottom: 65px;
+}
+
+.reviews__slide {
+  width: 100%;
+  height: 100%;
+  column-gap: 1.11rem;
+  max-width: 834px;
+  justify-content: space-between;
+  display: none;
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+.reviews__slide.active {
+  display: flex;
 }
 
 .reviews__btn-prev,
 .reviews__btn-next {
   position: relative;
   top: 50%;
-  width: 72px;
+  min-width: 72px;
   height: 72px;
-  margin-right: 0.5rem;
   margin-top: -22px;
   cursor: pointer;
   background-color: #cc8b86;
@@ -624,11 +640,16 @@ h6 {
 }
 
 .application__map {
+  display: none;
   position: absolute;
-  z-index: 2;
   top: 0;
   right: 0;
   border: 0;
+}
+
+.load {
+  display: block;
+  z-index: 2;
 }
 
 .application__adress img {
@@ -642,5 +663,22 @@ h6 {
   }
   to {
     left: 10px;
+  }
+}
+
+@-webkit-keyframes fade {
+  from {
+    transform: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
   }
 }
