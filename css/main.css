@@ -238,7 +238,8 @@ h6 {
 
 .about,
 .works,
-.reviews {
+.reviews,
+.footer {
   width: 100%;
   background-color: #efe6e4;
 }
@@ -547,7 +548,6 @@ h6 {
   left: auto;
   right: 0;
   margin-right: 0;
-  margin-left: 0.5rem;
   background-image: url("../images/next-arrow.svg");
 }
 .reviews__quote {
@@ -577,7 +577,7 @@ h6 {
 .application__content {
   max-width: 1152px;
   width: 100%;
-  margin: 0 auto;
+  margin-left: 181px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -655,6 +655,29 @@ h6 {
 .application__adress img {
   position: relative;
   z-index: 1;
+}
+
+.footer__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  padding: 37px 0 37px 0;
+  column-gap: 2.33rem;
+}
+
+.footer__phone a,
+.footer__adress,
+.footer__company {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.66;
+  color: #533738;
+}
+
+
+.footer__company {
+  margin-left: auto;
 }
 
 @keyframes slidein {
