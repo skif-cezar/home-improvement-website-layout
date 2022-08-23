@@ -24,22 +24,22 @@
           <nav class="header__menu menu">
             <ul class="menu__list">
               <li class="menu__item">
-                <a href="#" class="menu__link">О компании</a>
+                <a href="#about" class="menu__link">О компании</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">Портфолио</a>
+                <a href="#works" class="menu__link">Портфолио</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">Команда</a>
+                <a href="#team" class="menu__link">Команда</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">Как мы работаем</a>
+                <a href="#impression" class="menu__link">Как мы работаем</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">Отзывы клиентов</a>
+                <a href="#reviews" class="menu__link">Отзывы клиентов</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">Оставить заявку</a>
+                <a href="#application" class="menu__link">Оставить заявку</a>
               </li>
             </ul>
           </nav>
@@ -60,7 +60,7 @@
             <a href="#" class="promo__button btn">Оставить заявку</a>
           </div>
         </section>
-        <section class="about">
+        <section class="about" id="about">
           <h2 class="about__title title">О нас</h2>
           <article class="about__container">
             <div class="about__content">
@@ -110,7 +110,7 @@
             </div>
           </div>
         </section>
-        <section class="works">
+        <section class="works" id="works">
           <h2 class="works__title title">Наши работы</h2>
           <article class="works__container">
             <div class="works__content">
@@ -184,7 +184,7 @@
             </div>
           </article>
         </section>
-        <section class="team">
+        <section class="team" id="team">
           <h2 class="team__title title">Команда</h2>
           <article class="team__container">
             <div class="team__content">
@@ -230,7 +230,7 @@
             </div>
           </article>
         </section>
-        <section class="impression">
+        <section class="impression" id="impression">
           <h2 class="impression__title title">Как мы работаем</h2>
           <div class="impression__content">
             <ol class="impression__list">
@@ -252,7 +252,7 @@
             </ol>
           </div>
         </section>
-        <section class="reviews">
+        <section class="reviews" id="reviews">
           <h2 class="reviews__title title">Отзывы</h2>
           <article class="reviews__container">
             <div class="reviews__content">
@@ -265,8 +265,8 @@
                   </p>
                   <p>
                     Работа шла быстро, было очень приятно общаться и
-                    взаимодествовать с&nbsp;сотрудниками. Не ожидала, что это будет
-                    так легко!
+                    взаимодествовать с&nbsp;сотрудниками. Не ожидала, что это
+                    будет так легко!
                   </p>
                   <p>Буду советовать и своим друзьям к вам обращаться!»</p>
                 </blockquote>
@@ -291,38 +291,54 @@
             </div>
           </article>
         </section>
-        <section class="application">
-          <h2 class="application__title title">Оставить заявку</h2>
-          <article class="application__container">
-            <p>
-              Оставьте свои контакты. Менеджер перезвонит в удобное вам время и
-              ответит на все вопросы.
-            </p>
-            <form class="application__form" action="#" id="application-form">
-              <input type="text" name="name" placeholder="Ваше имя" required />
-              <input
-                type="tel"
-                name="phone"
-                placeholder="Введите телефон"
-                required
+        <section class="application" id="application">
+          <article class="application__content">
+            <article class="application__container">
+              <h2 class="application__title title">Оставить заявку</h2>
+              <p>
+                Оставьте свои контакты. Менеджер перезвонит в&nbsp;удобное вам
+                время и ответит на все вопросы.
+              </p>
+              <form class="application__form" action="#" id="application-form">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Ваше имя"
+                  required
+                />
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Введите телефон"
+                  required
+                />
+                <button
+                  form="application-form"
+                  type="submit"
+                  class="application__button btn"
+                >
+                  Оставить заявку
+                </button>
+              </form>
+            </article>
+            <div class="application__adress">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499.65042390222794!2d30.32283653489673!3d59.93875118712657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sby!4v1661252221204!5m2!1sru!2sby"
+                width="590"
+                height="624"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+              <img
+                src="images/content/map.jpg"
+                alt="Карта офиса по адресу город Санкт-Петербург улица Большая Конюшенная, 19."
+                width="590"
+                height="624"
               />
-              <button
-                form="application-form"
-                type="submit"
-                class="application__button btn"
-              >
-                Оставить заявку
-              </button>
-            </form>
+            </div>
           </article>
-          <div class="application__adress">
-            <img
-              src="images/content/map.jpg"
-              alt="Карта офиса по адресу город Санкт-Петербург улица Большая Конюшенная, 19."
-              width="590"
-              height="624"
-            />
-          </div>
         </section>
       </main>
       <footer class="footer">

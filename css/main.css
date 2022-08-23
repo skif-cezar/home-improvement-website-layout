@@ -558,6 +558,32 @@ h6 {
   background-color: #8d7370;
 }
 
+.application__content {
+  max-width: 1152px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.application__container {
+  margin-top: 50px;
+}
+
+.application__title {
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.application__container p {
+  max-width: 507px;
+  padding: 24px 0 44px 0;
+  color: #ffffff;
+  opacity: 0.6;
+}
+
 .application__form {
   width: 508px;
   display: flex;
