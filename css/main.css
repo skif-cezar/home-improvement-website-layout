@@ -619,6 +619,23 @@ h6 {
   margin-top: 0;
 }
 
+.application__adress {
+  position: relative;
+}
+
+.application__map {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  border: 0;
+}
+
+.application__adress img {
+  position: relative;
+  z-index: 1;
+}
+
 @keyframes slidein {
   from {
     left: 0;
